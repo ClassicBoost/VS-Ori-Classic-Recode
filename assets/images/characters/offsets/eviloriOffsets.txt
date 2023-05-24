@@ -1,0 +1,7 @@
+idle 1 -5
+singUP -26 -30
+singRIGHT -18 -12
+singLEFT 81 -10
+singDOWN -1 -6
+aim 90 0
+shoot 90 0

@@ -1,0 +1,69 @@
+{
+	"song": {
+		"speed": 3.5,
+		"stage": "oriforest-old",
+		"player1": "bf",
+		"player2": "ori",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Set Cam Zoom",
+						"1.2",
+						"0"
+					]
+				]
+			],
+			[
+				1920,
+				[
+					[
+						"Set Cam Zoom",
+						"1.7",
+						""
+					]
+				]
+			],
+			[
+				2520,
+				[
+					[
+						"Set Cam Zoom",
+						"0.88",
+						"0.5"
+					]
+				]
+			],
+			[
+				2640,
+				[
+					[
+						"bopbopbop",
+						"true",
+						""
+					]
+				]
+			],
+			[
+				10440,
+				[
+					[
+						"bopbopbop",
+						"false",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 125,
+		"arrowSkin": "",
+		"needsVoices": false,
+		"song": "MY ASSHOLE BURNS"
+	}
+}

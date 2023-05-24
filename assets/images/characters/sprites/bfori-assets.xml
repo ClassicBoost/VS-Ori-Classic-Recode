@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bfori-assets.png">
+<SubTexture name="down0000" x="0" y="0" width="545" height="702" frameX="-122" frameY="-58" frameWidth="820" frameHeight="820" />
+<SubTexture name="down0001" x="545" y="0" width="545" height="718" frameX="-122" frameY="-40" frameWidth="820" frameHeight="820" />
+<SubTexture name="idle0000" x="1090" y="0" width="475" height="685" frameX="-109" frameY="-17" frameWidth="720" frameHeight="720" />
+<SubTexture name="idle0001" x="1565" y="0" width="503" height="648" frameX="-90" frameY="-54" frameWidth="720" frameHeight="720" />
+<SubTexture name="idle0002" x="0" y="718" width="490" height="661" frameX="-101" frameY="-41" frameWidth="720" frameHeight="720" />
+<SubTexture name="idle0003" x="490" y="718" width="487" height="670" frameX="-100" frameY="-32" frameWidth="720" frameHeight="720" />
+<SubTexture name="idle0004" x="977" y="718" width="479" height="679" frameX="-107" frameY="-23" frameWidth="720" frameHeight="720" />
+<SubTexture name="idle0005" x="1456" y="718" width="475" height="685" frameX="-109" frameY="-17" frameWidth="720" frameHeight="720" />
+<SubTexture name="right0000" x="0" y="1403" width="756" height="726" frameX="-28" frameY="-39" frameWidth="820" frameHeight="820" />
+<SubTexture name="right0001" x="756" y="1403" width="738" height="726" frameX="-46" frameY="-39" frameWidth="820" frameHeight="820" />
+<SubTexture name="left0000" x="1494" y="1403" width="489" height="692" frameX="-151" frameY="-71" frameWidth="820" frameHeight="820" />
+<SubTexture name="left0001" x="1983" y="1403" width="477" height="692" frameX="-147" frameY="-71" frameWidth="820" frameHeight="820" />
+<SubTexture name="up0000" x="0" y="2129" width="521" height="718" frameX="-158" frameY="-31" frameWidth="820" frameHeight="820" />
+<SubTexture name="up0001" x="521" y="2129" width="521" height="708" frameX="-158" frameY="-43" frameWidth="820" frameHeight="820" />
+</TextureAtlas>
