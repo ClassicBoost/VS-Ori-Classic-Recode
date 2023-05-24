@@ -223,7 +223,7 @@ class Character extends FNFSprite
 				height += 140;
 
 				playAnim('idle');
-				barColor = 0xFF606060;
+				
 			case 'shriek':
 				tex = Paths.getSparrowAtlas('characters/sprites/shriek');
 				frames = tex;
@@ -242,7 +242,7 @@ class Character extends FNFSprite
 				characterData.camOffsetX += 300;
 
 				playAnim('idle');
-
+				barColor = 0xFF606060;
 			case 'evilori':
 				tex = Paths.getSparrowAtlas('characters/sprites/evilori');
 				frames = tex;

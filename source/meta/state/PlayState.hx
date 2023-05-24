@@ -372,6 +372,10 @@ class PlayState extends MusicBeatState
 
 		if (curSong.toLowerCase() == 'trirotation')
 			hasTWOplayers = true;
+		if (curSong.toLowerCase() == 'restoring-the-light') {
+			boyfriend.color = 0xFF5B5E7D;
+			gf.color = 0xFF5B5E7D;
+		}
 
 		if (!hasTWOplayers)
 			remove(bftwobutfake);
@@ -409,7 +413,7 @@ class PlayState extends MusicBeatState
 			allUIs.push(strumHUD[i]);
 			FlxG.cameras.add(strumHUD[i]);
 			// set this strumline's camera to the designated camera
-			strumLines.members[i].cameras = [strumHUD[i]];
+			strumLines.members[i].cameras = [camHUD];
 		}
 		add(strumLines);
 
@@ -1209,8 +1213,8 @@ class PlayState extends MusicBeatState
 					opponentSploosh(coolNote, characterStrums);
 				}
 				if (dadOpponent.curCharacter == 'shriek') {
-					FlxG.camera.shake(0.02, 0.2);
-					camHUD.shake(0.02, 0.2);
+					FlxG.camera.shake(0.002, 0.2);
+					camHUD.shake(0.002, 0.2);
 					if (health > 0.3)
 						health -= 0.015;
 				}
@@ -1754,8 +1758,9 @@ class PlayState extends MusicBeatState
 			switch (curStep) {
 				case 1:
 					stageBuild.triggerEvent('night', 90);
-					FlxTween.tween(boyfriend, {color: 0xFF5B5E7D}, 90, {ease: FlxEase.linear});
-					FlxTween.tween(gf, {color: 0xFF5B5E7D}, 90, {ease: FlxEase.linear});
+					// Haxeflixel you are fucking retarded
+				//	FlxTween.color(boyfriend, 0xFFFFFFFF, 0xFF5B5E7D, 90, {ease: FlxEase.linear});
+				//	FlxTween.color(gf, 0xFFFFFFFF, 0xFF5B5E7D, 90, {ease: FlxEase.linear});
 				case 352,608:
 					extraAnim = 'alt';
 					bopbopbop = true;

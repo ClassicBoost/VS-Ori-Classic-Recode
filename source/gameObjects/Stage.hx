@@ -21,6 +21,7 @@ import meta.CoolUtil;
 import meta.data.Conductor;
 import meta.data.dependency.FNFSprite;
 import meta.state.PlayState;
+import flixel.util.FlxColor;
 
 using StringTools;
 
@@ -251,6 +252,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 				clouds.alpha = 1;
 
+				if (time == '-dark')
+					gang.color = 0xFF5B5E7D;
 
 				if (mood == 'rain') {
 					wtfisthatlmao.color = 0xFF2B2B2B;
@@ -429,6 +432,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			FlxTween.tween(grassnight, {alpha: 1}, timer, {ease: FlxEase.linear});
 			FlxTween.tween(treeeeesnight, {alpha: 1}, timer, {ease: FlxEase.linear});
 			FlxTween.tween(clouds, {alpha: 0}, timer, {ease: FlxEase.linear});
+		//	FlxTween.color(gang, FlxColor.WHITE, 5B5E7D, time, {ease: FlxEase.linear}); // Haxeflixel you are fucking retarded
 		case 'normal':
 			wtfisthatlmao.color = 0xFFFFFFFF;
 			mountains.color = 0xFFFFFFFF;
@@ -445,6 +449,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 		// trace('update backgrounds');
 		switch (PlayState.curStage)
 		{
+			case 'forest':
+				gang.animation.play('bop',true);
 			case 'highway':
 				// trace('highway update');
 				grpLimoDancers.forEach(function(dancer:BackgroundDancer)
